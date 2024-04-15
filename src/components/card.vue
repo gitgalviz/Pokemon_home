@@ -37,6 +37,11 @@
             <q-linear-progress size="10px" :value="defensa_especial2" color="pink" />
           </div>
         </div>
+        <div class="salir">
+            <router-link to="/">
+              <button>Salir</button>
+            </router-link>
+          </div>
       </div>
       <footer>Esneyder Galviz Reyes@Copy2024</footer>
     </div>
@@ -109,6 +114,40 @@
     width: 100%;
   }
   
+  .salir{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  button {
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  background-color: #23c483;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+button:active {
+  transform: translateY(-1px);
+}
   p {
     font-size: 20px;
     font-weight: bold;
